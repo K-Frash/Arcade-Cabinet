@@ -1,0 +1,7 @@
+apply plugin : 'application'
+mainClassName = "Main"
+sourceSets.main.java.srcDirs = ['src']
+dependencies {
+ compile files( 
+'src/Block.java','src/View.java','src/Model.java')
+}
