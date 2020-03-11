@@ -1,11 +1,18 @@
 #ifndef __ENEMY_H__
 #define __ENEMY_H__
-#include "character.h"
+#include "animate.h"
 
-class Enemy: public Character {
- public:
-  Enemy(char rep, int hp, int atk, int def): Character(rep, hp, atk, def) {}
-  virtual bool hostile() const { return true; }
+class Enemy: public Animate {
+	public:
+	Enemy();
+	Enemy(int, int, int, bool, bool, bool, bool, int, std::string, bool, char, bool, bool, bool, int);
+	Enemy(const Enemy&);
+	~Enemy();
+	
+	virtual void takeTurn(int);
+	virtual bool getHostility();
+	
 };
+
 
 #endif

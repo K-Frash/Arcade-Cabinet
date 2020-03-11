@@ -17,7 +17,8 @@ int main() {
 
   string command;
   bool wasSetup = false;
-
+  cout << "type \'game\' to start a game" << endl;
+  cout << "type \'setup\' to create a custom board state" << endl;
   while(cin >> command) {
     if (command == "setup") {
       b.clear();

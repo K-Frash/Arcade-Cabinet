@@ -1,10 +1,22 @@
 #ifndef __PLAYER_H__
 #define __PLAYER_H__
-#include "character.h"
+#include "hero.h"
 
-class Player: public Character {
- public:
-  Player(int hp, int atk, int def): Character('@', hp, atk, def) {}
+class Player {
+		Hero* hero;
+		public:
+		Player(Hero*);
+		~Player();
+		
+		void move(std::string direction);
+		void attack();
+		void consume();
+		Hero* getHero();
+		
+		bool isDead();
+		
+		int getScore();
+		
 };
 
 #endif

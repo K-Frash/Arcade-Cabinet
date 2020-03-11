@@ -1,7 +1,0 @@
-#include "werewolf.h"
-#include "vampire.h"
-#include "goblin.h"
-#include "troll.h"
-#include "phoenix.h"
-#include "merchant.h"
-#include "dragon.h"
