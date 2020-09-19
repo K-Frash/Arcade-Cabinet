@@ -1,4 +1,4 @@
-# Game-Cabinet
+# The Arcade Cabinet
 Gaming Cabinet storing a suite of games developed with Object Oriented Principles in C++ and Java
 
 ### Current Collection of Games
